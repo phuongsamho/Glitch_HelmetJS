@@ -8,6 +8,14 @@ var app = express();
 var fs = require('fs');
 var path = require('path');
 
+// BCrypt Usage
+const bcrypt = require('bcrypt');
+
+/*const saltRounds = 10;
+const phuongiePlainTestPassword = 's0/\/\eP4$$w0rD';
+const otherPlainTextPassword = 'not_lollipop';*/
+
+
 app.use(function(req, res, next) {
   res.set({
     "Access-Control-Allow-Origin" : "*",
